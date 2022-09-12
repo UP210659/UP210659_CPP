@@ -1,4 +1,4 @@
-# UP210659_CPP
-Repositorio materia de programación 
+Repositorio materia de programación _UP210659_
+*ELDR*
 
 ![imagenes](/imagenes/descarga.png)
