@@ -1,3 +1,3 @@
-## Bienvenido a mi repositorio
-# *Evenly Liliana Delgado Rivera*
-# UP210659/UP210659_CPP
+## Bienvenido a mi repositorio _UP210659_
+
+
