@@ -10,10 +10,13 @@
 
 <h2 align="center"> 
 
-U1
-U2
-U3
-U4
+# Main structure
+
+1. U1Programming introduction
+2. U2 Control structure and cycles 
+3. U3 Fuctions
+4. U4 Files and arrays
+
 
 
 
