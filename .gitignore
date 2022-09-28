@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+# Skip files without extension
+*
+!*.*
+!/**/
