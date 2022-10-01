@@ -1,17 +1,10 @@
- #  ⛵ UP210659  <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/lilia.png" height="200px" width="300px"></h1>
-## _Welcome to my repository_  
- 
-
-<p align="center">
-    <img height="200" src=
-    "imagen/descarga.png">
-
-<h2 align="center"> 
+ # <h1 align="center">⛵ UP210659<h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/lilia.png" height="100px" width="200px"></h1>
+## _Welcome to my repository_<p align="center"><img height="100" src="imagen/descarga.png"><h2 align="center"> 
 
 # Main structure
 
-1. U1Programming introduction
-2. U2 Control structure and cycles 
+1. [U1 Programming introduction](https://github.com/UP210659/UP210659_CPP/tree/main/U1)
+2. [U2 Control structure and cycles](https://github.com/UP210659/UP210659_CPP/tree/main/U2) 
 3. U3 Fuctions
 4. U4 Files and arrays  
  
