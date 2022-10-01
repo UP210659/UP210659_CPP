@@ -1,4 +1,4 @@
- # UP210659  <h1 align="center"> <img src="/home/liliana/Documentos/UP210659/UP210659_CPP/imagen/Texto Animado - HTML, CSS y JS.gif" height="300px" width="300px"></h1>
+ # UP210659  <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/Texto%20Animado%20-%20HTML%2C%20CSS%20y%20JS.gif" height="500px" width="500px"></h1>
 ## _Welcome to my repository_  
  
 
