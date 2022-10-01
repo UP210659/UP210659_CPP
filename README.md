@@ -1,4 +1,4 @@
- # UP210659  <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/Texto%20Animado%20-%20HTML%2C%20CSS%20y%20JS.gif" height="500px" width="500px"></h1>
+ #  ⛵ UP210659  <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/lilia.png" height="200px" width="300px"></h1>
 ## _Welcome to my repository_  
  
 
@@ -16,7 +16,11 @@
 4. U4 Files and arrays  
  
  
- <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/crear-gif-de-im%C3%A1genes.gif" height="300px" width="300px"></h1>
+ <h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/crear-gif-de-im%C3%A1genes.gif" height="300px" width="300px"></h1>  
+ 
+ ABOUT ME 🌱
+ - I am studying computer systems engineering 🎓
+ - I am learning to program in C++ ✅ 
 
 
 
