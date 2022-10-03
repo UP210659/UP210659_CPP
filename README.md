@@ -1,6 +1,5 @@
  # <h1 align="center">⛵ UP210659<h1 align="center"> <img src="https://github.com/UP210659/UP210659_CPP/blob/main/imagen/lilia.png" height="100px" width="200px"></h1>
-## _Welcome to my repository_<p align="center"><img height="100" src="imagen/descarga.png"><h2 align="center"> 
-
+## _Welcome to my repository_
 # Main structure
 
 1. [U1 Programming introduction](https://github.com/UP210659/UP210659_CPP/tree/main/U1)
@@ -13,7 +12,8 @@
  
  ABOUT ME 🌱
  - I am studying computer systems engineering 🎓
- - I am learning to program in C++ ✅ 
+ - I am learning to program in C++ ✅ <p align="center"><img height="100" src="imagen/descarga.png"><h2 align="center"> 
+
 
 
 
