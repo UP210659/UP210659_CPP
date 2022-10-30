@@ -13,7 +13,7 @@ Entre $20,000 y $35,000	         20%
 Entre $35,000 y $60,000	         30%
 Más de $60,000	                 45%
 Escribir un programa que pregunte al usuario su renta anual y muestre por 
-pantalla el tipo impositivo que le corresponde.
+pantalla el impuesto que les corresponde.
 */
 #include <iostream>
 using namespace std;
