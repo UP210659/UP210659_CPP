@@ -515,7 +515,7 @@ The program works like this:
 #### Examples    
 **Multiplication table**  
 <div align ="center">  
-<img alt="45" height="150" src="imag/ta.png"/>
+<img alt="300" height="305" src="imag/ta.png"/>
 </div>  
  
 <br /><br /><br />  
@@ -616,7 +616,3 @@ For each case:
 <div align ="center">  
 <img alt="45" height="150" src="imag/noo.png"/>
 </div>   
-<br /><br />
-<br /><h3 align="center">
-[Return to Index]() 
-<br /><br /><br />
