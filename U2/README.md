@@ -159,7 +159,7 @@ For each case:
 
 **d)** Invalid
 <div align ="center">  
-<img alt="45" height="150" src="imag/.incorr.png"/>
+<img alt="45" height="150" src="imag/incorr.png"/>
 </div>   
  
 <br /><br /><br />  
