@@ -169,9 +169,6 @@ void imprimirAreaJuego(){
 
 bool verificacion(){
     if(tableroGato[0][1] == tableroGato[0][0] && tableroGato[0][2])
-    {
-        else if(tableroGato == tru)
-    }
     if(tableroGato[1][1] == tableroGato[1][0] && tableroGato[1][2])
     if(tableroGato[2][1] == tableroGato[2][0] && tableroGato[2][2])
     if(tableroGato[1][0] == tableroGato[0][0] && tableroGato[2][0]) 
