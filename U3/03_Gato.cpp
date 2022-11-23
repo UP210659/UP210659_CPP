@@ -5,23 +5,22 @@ Contact:up210659@alumnos.upa.edu.mx
 Description: Tic tac toe
 */
 
-#include<iostream>
+#include <iostream>
 #include <string.h>
 using namespace std;
 
-//------TABLERO DEL GATO------
-int row,col; 
-string tableroGato[3][3] = {{"1","2","3"},{"4","5","6"},{"7","8","9"}};
-void Tablero();
+//------BOARD------
+int row, col;
+string BOARDTTT[3][3] = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}};
+void BOARD();
 string HEADER = "\033[95m";
 string CYAN = "\033[96m";
 string VERDE = "\033[92m";
 string Amarrillo = "\033[93m";
 string ENDC = "\033[0m";
 //\033[0;31m"<<variable<<"\033[om/
-
 //------ESTRUCTURA DEL GATO------
-void Tablero() 
+void BOARD()
 {
     int x = 0, y = 0;
     for (int row = 0; row < 5; row++)
@@ -34,7 +33,7 @@ void Tablero()
             }
             else if (col == 1 || col == 4 || col == 7)
             {
-                cout << tableroGato[x][y];
+                cout << BOARDTTT[x][y];
                 y++;
             }
             else
@@ -56,217 +55,223 @@ void Tablero()
     }
 }
 
-//------VARIABLES GLOBALES------
-int turnoJugador = 0; 
-char areaJuego[3][3];
-string valorJugada;
-int turnoJugada;
-bool casillaOcupada;
-void Tablero(int);
-
+//------GLOBAL VARIABLES------
+int playerTurn = 0;
+char gameArea[3][3];
+string valuePlay;
+int turnPlay;
+bool occupiedSquare;
+void BOARD(int);
 
 //------FUNCIONES------
 
-int seleccionarJugada(string j1, string j2){
-    int jugada;
-    do{
-       if(turnoJugador % 2 == 0)//------PARES--------
-       {
-        cout<<"\nTurno de " <<CYAN <<j1 <<ENDC <<", dame la jugada:";
-       }
-       else{
-        cout <<"\nTurno de " <<VERDE <<j2 <<ENDC <<", dame la jugada:";
-       }
-       cin >> jugada;
-    }while(jugada < 1 && jugada > 9);
+int selectPlay(string j1, string j2)
+{
+    int move;
+    do
+    {
 
-    return jugada;
-} 
+        if (playerTurn % 2 == 0) //------PEER------
+        {
+            cout << "\nTurn to " << CYAN << j1 << ENDC << ", give me the play: ";
+        }
+        else
+        {
+            cout << "\nTurn to " << VERDE << j2 << ENDC << ", give me the play: ";
+        }
+        cin >> move;
+    } while (move < 1 && move > 9);
 
-//------POSICIONES------
-bool comprobarCasillaOcupada(int jugada){
+    return move;
+}
+
+//------POSITIONS------
+bool checkBusyBox(int move)
+{
     int row, col;
-    if(jugada == 1){
+    if (move == 1)
+    {
         row = 0;
         col = 0;
     }
-    else if (jugada == 2)
+    else if (move == 2)
     {
         row = 0;
         col = 1;
     }
-    else if (jugada == 3)
+    else if (move == 3)
     {
         row = 0;
         col = 2;
     }
-    else if (jugada == 4)
+    else if (move == 4)
     {
         row = 1;
         col = 0;
     }
-    else if (jugada == 5)
+    else if (move == 5)
     {
-        row=1;
-        col=1;
+        row = 1;
+        col = 1;
     }
-    else if (jugada == 6)
+    else if (move == 6)
     {
-        row=1;
-        col=2;
+        row = 1;
+        col = 2;
     }
-    else if (jugada == 7)
+    else if (move == 7)
     {
-        row=2;
-        col=0;
-    }else if (jugada == 8)
-    {
-        row=2;
-        col=1;
+        row = 2;
+        col = 0;
     }
-    else if (jugada == 9)
+    else if (move == 8)
     {
-        row=2;
-        col=2;
+        row = 2;
+        col = 1;
     }
-    if (tableroGato[row][col] == "X" || tableroGato[row][col] == "O")   
-       return true;
+    else if (move == 9)
+    {
+        row = 2;
+        col = 2;
+    }
+    if (BOARDTTT[row][col] == CYAN + "X" + ENDC || BOARDTTT[row][col] == VERDE + "O" + ENDC)
+        return true;
     else
-    return false; 
+        return false;
 }
 
-void colocarJugada(int jugada)
+void placePlay(int move)
 {
 
-    if (turnoJugador % 2 == 0) //------PARES------
+    if (playerTurn % 2 == 0) //------PARES------
     {
-        valorJugada = CYAN + "X" + ENDC;
+        valuePlay = CYAN + "X" +  ENDC;
     }
     else
     {
-        valorJugada = VERDE + "O" + ENDC;
+        valuePlay = VERDE + "O" + ENDC;
     }
-    if (jugada == 1)
-        tableroGato[0][0] = valorJugada;
-    else if(jugada==2)
-        tableroGato[0][1] = valorJugada;
-    else if(jugada==3)
-        tableroGato[0][2] = valorJugada;
-    else if(jugada==4)
-        tableroGato[1][0] = valorJugada;
-    else if(jugada==5)
-        tableroGato[1][1] = valorJugada;
-    else if(jugada==6)
-        tableroGato[1][2] = valorJugada;
-    else if(jugada==7)
-        tableroGato[2][0] = valorJugada;
-    else if(jugada==8)
-        tableroGato[2][1] = valorJugada;
-    else if(jugada==9)
-        tableroGato[2][2] = valorJugada;
- }
+    if (move == 1)
+        BOARDTTT[0][0] = valuePlay;
+    else if (move == 2)
+        BOARDTTT[0][1] = valuePlay;
+    else if (move == 3)
+        BOARDTTT[0][2] = valuePlay;
+    else if (move == 4)
+        BOARDTTT[1][0] = valuePlay;
+    else if (move == 5)
+        BOARDTTT[1][1] = valuePlay;
+    else if (move == 6)
+        BOARDTTT[1][2] = valuePlay;
+    else if (move == 7)
+        BOARDTTT[2][0] = valuePlay;
+    else if (move == 8)
+        BOARDTTT[2][1] = valuePlay;
+    else if (move == 9)
+        BOARDTTT[2][2] = valuePlay;
+}
 
-void imprimirAreaJuego(){
+void printGameArea()
+{
     for (int row = 0; row < 3; row++)
     {
         for (int col = 0; col < 3; col++)
         {
-            cout << areaJuego[row][col];
+            cout << gameArea[row][col];
         }
         cout << endl;
-        
     }
-    
 }
 
-
-bool verificacion(){
-    bool gano = false;
-    if(tableroGato[0][1] == tableroGato[0][0] && tableroGato[0][2] == tableroGato[0][1])
+bool check() //BOARDTTT is board tic tac toe
+{
+    bool won = false;
+    if (BOARDTTT[0][1] == BOARDTTT[0][0] && BOARDTTT[0][2] == BOARDTTT[0][1])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[1][1] == tableroGato[1][0] && tableroGato[1][2] == tableroGato[1][1])
+    if (BOARDTTT[1][1] == BOARDTTT[1][0] && BOARDTTT[1][2] == BOARDTTT[1][1])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[2][1] == tableroGato[2][0] && tableroGato[2][2] == tableroGato[2][1])
+    if (BOARDTTT[2][1] == BOARDTTT[2][0] && BOARDTTT[2][2] == BOARDTTT[2][1])
     {
-        gano = true;
+       won = true;
     }
-    if(tableroGato[1][0] == tableroGato[0][0] && tableroGato[2][0] == tableroGato[1][0]) 
+    if(BOARDTTT[1][0] == BOARDTTT[0][0] && BOARDTTT[2][0] == BOARDTTT[1][0])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[1][1] == tableroGato[0][1] && tableroGato[2][1] == tableroGato[1][1])
+    if(BOARDTTT[1][1] == BOARDTTT[0][1] && BOARDTTT[2][1] == BOARDTTT[1][1])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[1][2] == tableroGato[0][2] && tableroGato[2][2] == tableroGato[1][2])
+    if(BOARDTTT[1][2] == BOARDTTT[0][2] && BOARDTTT[2][2] == BOARDTTT[1][2])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[1][1] == tableroGato[0][0] && tableroGato[2][2] == tableroGato[1][1])
+    if(BOARDTTT[1][1] == BOARDTTT[0][0] && BOARDTTT[2][2] == BOARDTTT[1][1])
     {
-        gano = true;
+        won = true;
     }
-    if(tableroGato[1][1] == tableroGato[2][0] && tableroGato[0][2] == tableroGato[1][1])
+    if(BOARDTTT[1][1] == BOARDTTT[2][0] && BOARDTTT[0][2] == BOARDTTT[1][1])
     {
-        gano = true;
+        won = true;
     }
-    return gano;
-    
-    
-    
-
+    return won;
 }
-
 
 int main()
 {
-    int areaJuego, tablero, jugada, jugador1, modoDeJugada, jugador2;
-    bool casillaOcupada = true;
-    bool ganador = false;
-    string nombre_j1;
-    string nombre_j2;
-    Tablero();
+    int gameArea, move, player1, gameMode, player2;
+    bool occupiedSquare = true;
+    bool winner = false;
+    string name_j1;
+    string name_j2;
+    BOARD();
 
-    cout << "Dame tu modo de jugada:\n1. VS HUMANO\n2. VS CPU\n";
-    cin >> modoDeJugada;
-    if (modoDeJugada == 1)
+    cout << "\nWe welcome you this is a tic tac toe game ;) \n1. [CLICK] -> You will compete against ¡HUMAN!\n";
+    cout << endl;
+    cout << "----------HUMAN VS HUMAN----------" << endl << endl << "¡May the best win!\n";
+    cin >> gameMode;
+    if (gameMode == 1)
     {
-        cout <<"Quién es jugador 1: ";
-        cin >> nombre_j1;
-        cout << "Quien es juagador 2: ";
-        cin >> nombre_j2;
+        cout << "Who is player 1: ";
+        cin >> name_j1;
+        cout << "\nWho is jugador 2: ";
+        cin >> name_j2;
         cout << "\n";
-
         do
         {
-            do{
-            jugada = seleccionarJugada(nombre_j1, nombre_j2);
-            casillaOcupada = comprobarCasillaOcupada(jugada);
-            } while(casillaOcupada == true);
-
-            if (casillaOcupada == false)//esta libre
+            do
             {
-                colocarJugada(jugada);
-                ganador = verificacion();
+                move = selectPlay(name_j1, name_j2);
+                occupiedSquare = checkBusyBox(move);
+            } while (occupiedSquare == true);
+
+            if (occupiedSquare == false) // IT´S FREE
+            {
+                placePlay(move);
+                winner = check();
                 system("clear");
-                Tablero();
+                BOARD();
             }
-            if(ganador)
+            if (winner == true)
             {
-                cout << "\nYa ganaste"
-                     << "\n ";
-                     break;
+                if (playerTurn % 2 == 0)
+                {
+                    cout << "¡CONGRATULATIONS! PLAYER 1 WON :) ";
+                    break;
+                }
+                else
+                {
+                   cout << "¡CONGRATULATIONS! PLAYER 2 WON :) ";
+                   break;
+                }
             }
-            turnoJugador++;//le toca al otro jugador
+            playerTurn++; // PLAYER 2
 
-           
-        } while (ganador == false && turnoJugador <= 9);
-
-
-
-    } return 0;
+        } while (winner == false && playerTurn <= 9);
+    }
+    return 0;
 }
