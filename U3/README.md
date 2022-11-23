@@ -20,12 +20,16 @@ INSTRUCTIONS
 </div> 
 </h1>  
 
+### HOW TO PLAY  
+### GENERAL CONSIDERATIONS
+
 [RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--) 
 <h1 align="center">
 <div align ="center">
 FLOWCHART
 </div> 
-</h1>  
+</h1>   
+
 
 [RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--) 
 <h1 align="center">
@@ -41,4 +45,4 @@ CONCLUSIONS
 </div> 
 </h1>  
 
-[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--)
+[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--$$)

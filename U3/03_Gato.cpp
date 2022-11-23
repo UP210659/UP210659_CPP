@@ -145,7 +145,7 @@ void placePlay(int move)
 
     if (playerTurn % 2 == 0) //------PARES------
     {
-        valuePlay = CYAN + "X" +  ENDC;
+        valuePlay = CYAN + "X" + ENDC;
     }
     else
     {
@@ -183,7 +183,7 @@ void printGameArea()
     }
 }
 
-bool check() //BOARDTTT is board tic tac toe
+bool check() // BOARDTTT is board tic tac toe
 {
     bool won = false;
     if (BOARDTTT[0][1] == BOARDTTT[0][0] && BOARDTTT[0][2] == BOARDTTT[0][1])
@@ -196,25 +196,25 @@ bool check() //BOARDTTT is board tic tac toe
     }
     if (BOARDTTT[2][1] == BOARDTTT[2][0] && BOARDTTT[2][2] == BOARDTTT[2][1])
     {
-       won = true;
+        won = true;
     }
-    if(BOARDTTT[1][0] == BOARDTTT[0][0] && BOARDTTT[2][0] == BOARDTTT[1][0])
+    if (BOARDTTT[1][0] == BOARDTTT[0][0] && BOARDTTT[2][0] == BOARDTTT[1][0])
     {
         won = true;
     }
-    if(BOARDTTT[1][1] == BOARDTTT[0][1] && BOARDTTT[2][1] == BOARDTTT[1][1])
+    if (BOARDTTT[1][1] == BOARDTTT[0][1] && BOARDTTT[2][1] == BOARDTTT[1][1])
     {
         won = true;
     }
-    if(BOARDTTT[1][2] == BOARDTTT[0][2] && BOARDTTT[2][2] == BOARDTTT[1][2])
+    if (BOARDTTT[1][2] == BOARDTTT[0][2] && BOARDTTT[2][2] == BOARDTTT[1][2])
     {
         won = true;
     }
-    if(BOARDTTT[1][1] == BOARDTTT[0][0] && BOARDTTT[2][2] == BOARDTTT[1][1])
+    if (BOARDTTT[1][1] == BOARDTTT[0][0] && BOARDTTT[2][2] == BOARDTTT[1][1])
     {
         won = true;
     }
-    if(BOARDTTT[1][1] == BOARDTTT[2][0] && BOARDTTT[0][2] == BOARDTTT[1][1])
+    if (BOARDTTT[1][1] == BOARDTTT[2][0] && BOARDTTT[0][2] == BOARDTTT[1][1])
     {
         won = true;
     }
@@ -232,7 +232,9 @@ int main()
 
     cout << "\nWe welcome you this is a tic tac toe game ;) \n1. [CLICK] -> You will compete against ¡HUMAN!\n";
     cout << endl;
-    cout << "----------HUMAN VS HUMAN----------" << endl << endl << "¡May the best win!\n";
+    cout << "----------HUMAN VS HUMAN----------" << endl
+         << endl
+         << "¡May the best win!\n";
     cin >> gameMode;
     if (gameMode == 1)
     {
@@ -256,22 +258,25 @@ int main()
                 system("clear");
                 BOARD();
             }
-            if (winner == true)
-            {
-                if (playerTurn % 2 == 0)
-                {
-                    cout << "¡CONGRATULATIONS! PLAYER 1 WON :) ";
-                    break;
-                }
-                else
-                {
-                   cout << "¡CONGRATULATIONS! PLAYER 2 WON :) ";
-                   break;
-                }
-            }
+
             playerTurn++; // PLAYER 2
 
-        } while (winner == false && playerTurn <= 9);
+        } while (winner == false && playerTurn < 9);
+        if (winner == true)
+        {
+            if (playerTurn % 2 == 0)
+            {
+                cout << "¡CONGRATULATIONS! PLAYER 1 WON :) \n";
+            }
+            else
+            {
+                cout << "¡CONGRATULATIONS! PLAYER 2 WON :) \n";
+            }
+        }
+        else
+        {
+            cout << "¡TIE!\n";
+        }
     }
     return 0;
 }
