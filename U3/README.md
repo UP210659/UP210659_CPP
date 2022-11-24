@@ -7,7 +7,7 @@
 # INDEX  
 1. [CODE TIC TAC TOE](03_Gato.cpp)
 2. [INSTRUCTIONS](#instructions)  
-   2.1 [HOW TO PLAY](#how-to-play-linux)  
+   2.1 [HOW TO PLAY (LINUX)](#how-to-play-linux)  
    2.2 [GENERAL CONSIDERATIONS](#general-considerations)  
 3. [FLOWCHART](#flowchart)
 4. [CODE EXECUTION](#code-execution)
@@ -37,19 +37,22 @@
 2. Player 2 is assigned "0" and is the same color as his name (cyan)  
 
  _note: player 2 will always do "0"_  
-3.   
- 
+3. Consider that if there are three in a line you win, it can be diagonal, horizontal or vertical   
+### _ERRORS_  
 
-[RETURN TO INDEX](#index) 
+[RETURN TO INDEX](#index)   
+
 <h1 align="center">
 <div align ="center">  
 
 ## FLOWCHART
 </div> 
-</h1>   
+</h1>  
 
 
-[RETURN TO INDEX](#index) 
+
+[RETURN TO INDEX](#index)   
+
 <h1 align="center">
 <div align ="center">  
 
@@ -57,7 +60,8 @@
 </div> 
 </h1>  
 
-[RETURN TO INDEX](#index) 
+[RETURN TO INDEX](#index)  
+
 <h1 align="center">
 <div align ="center">  
 
