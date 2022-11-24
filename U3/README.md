@@ -6,17 +6,18 @@
 
 # INDEX  
 1. [CODE TIC TAC TOE](03_Gato.cpp)
-2. [INSTRUCTIONS](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INSTRUCTIONS--)  
-   2.1 [HOW TO PLAY](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--HOW-TO-PLAY--)  
-   2.2 [GENERAL CONSIDERATIONS](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--GENERAL-CONSIDERATIONS)  
-3. [FLOWCHART](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--FLOWCHART--)
-4. [CODE EXECUTION](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--CODE-EXECUTION--)
-5. [CONCLUSIONS](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--CONCLUSIONS--)  
+2. [INSTRUCTIONS](#instructions)  
+   2.1 [HOW TO PLAY](#how-to-play-linux)  
+   2.2 [GENERAL CONSIDERATIONS](#general-considerations)  
+3. [FLOWCHART](#flowchart)
+4. [CODE EXECUTION](#code-execution)
+5. [CONCLUSIONS](#conclusions)  
    <br /><br /><br />   
   
 <h1 align="center">
-<div align ="center">
-INSTRUCTIONS
+<div align ="center">  
+
+## INSTRUCTIONS
 </div> 
 </h1>  
 
@@ -36,28 +37,32 @@ INSTRUCTIONS
 2. Player 2 is assigned "0" and is the same color as his name (cyan)  
 
  _note: player 2 will always do "0"_  
+3.   
  
 
-[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--) 
+[RETURN TO INDEX](#index) 
 <h1 align="center">
-<div align ="center">
-FLOWCHART
+<div align ="center">  
+
+## FLOWCHART
 </div> 
 </h1>   
 
 
-[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--) 
+[RETURN TO INDEX](#index) 
 <h1 align="center">
-<div align ="center">
-CODE EXECUTION
+<div align ="center">  
+
+## CODE EXECUTION
 </div> 
 </h1>  
 
-[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--) 
+[RETURN TO INDEX](#index) 
 <h1 align="center">
-<div align ="center">
-CONCLUSIONS 
+<div align ="center">  
+
+## CONCLUSIONS 
 </div> 
 </h1>  
 
-[RETURN TO INDEX](https://github.com/UP210659/UP210659_CPP/tree/main/U3#--INDEX--$$)
+[RETURN TO INDEX](#index)
