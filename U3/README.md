@@ -7,7 +7,7 @@
 # INDEX  
 1. [CODE TIC TAC TOE](03_Gato.cpp)
 2. [INSTRUCTIONS](#instructions)  
-   2.1 [HOW TO PLAY (LINUX)](#how-to-play-linux)  
+   2.1 [HOW TO PLAY (LINUX)](#how-to-play--linux)  
    2.2 [GENERAL CONSIDERATIONS](#general-considerations)  
 3. [FLOWCHART](#flowchart)
 4. [CODE EXECUTION](#code-execution)
