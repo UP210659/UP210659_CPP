@@ -48,7 +48,9 @@
 ## FLOWCHART
 </div> 
 </h1>  
-
+<div align ="center">
+<img alt="age0" height="" src="../U3/imagen/flow.png"/>
+</div>  
 
 
 [RETURN TO INDEX](#index)   
