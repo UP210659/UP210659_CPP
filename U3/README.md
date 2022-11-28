@@ -39,7 +39,8 @@
  _note: player 2 will always do "0"_  
 3. Consider that if there are three in a line you win, it can be diagonal, horizontal or vertical   
 ### _ERRORS_  
-
+1. On the game board it does not specify that player 1 is "X" and player 2 is "0"  
+  <br /><br /><br /> 
 [RETURN TO INDEX](#index)   
 
 <h1 align="center">
@@ -52,6 +53,7 @@
 <img alt="age0" height="" src="../U3/imagen/flow.png"/>
 </div>  
 
+<br /><br /><br />  
 
 [RETURN TO INDEX](#index)   
 
@@ -61,14 +63,17 @@
 ## CODE EXECUTION
 </div> 
 </h1>  
+<br /><br /><br />  
 
 [RETURN TO INDEX](#index)  
 
 <h1 align="center">
 <div align ="center">  
 
-## CONCLUSIONS 
+## CONCLUSION 
 </div> 
-</h1>  
+</h1>    
+In conclusion, this program was a bit complicated to make, because there were many functions that I didn't know how they were executed or what they did...
+<br /><br /><br />  
 
 [RETURN TO INDEX](#index)
