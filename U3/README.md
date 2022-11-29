@@ -4,6 +4,11 @@
 </div> 
 </h1>  
 
+<div align ="center">
+<img alt="age0" height="" src="../U3/imagen/tictac.jpg"/>
+</div>
+
+
 # INDEX  
 1. [CODE TIC TAC TOE](03_Gato.cpp)
 2. [INSTRUCTIONS](#instructions)  
